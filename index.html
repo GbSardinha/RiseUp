@@ -5,6 +5,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Rise Up CRUD App</title>
+		<link rel="stylesheet" href="assets/css/styles.css" />
 	</head>
-	<body></body>
+	<body>
+		<nav>
+			<div class="navGrid">
+				<div class="logoContainer">
+					<img src="assets/images/riseup.png" alt="RiseUpLogo" />
+					<span>User List</span>
+				</div>
+			</div>
+		</nav>
+
+		<div class="addUserContainer">
+			<div class="userTitle">CRUD REST API</div>
+			<div class="btnContainer">
+				<button class="addUserBTN">Add User +</button>
+			</div>
+		</div>
+
+		<!-- Display to add user -->
+		<div class="newUserContainer">
+			<div class="closeContainer">X</div>
+			<div class="infoContainer">
+				<h2>Please add the user creation information</h2>
+				<div class="userCreateForm">
+					<form action="post">
+						<label for="">Name :</label>
+						<input type="text" /> <br />
+						<label for="">Username :</label>
+						<input type="text" /> <br />
+						<label for="">E-mail :</label>
+						<input type="email" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- User Display -->
+		<div class="tableContainer">
+			<table>
+				<thead>
+					<tr class="userDisplay">
+						<th>iD</th>
+						<th>Name</th>
+						<th>Username</th>
+						<th>Email</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<script
+			type="application/javascript"
+			src="assets/js/jquery-3.4.1.min.js"
+		></script>
+		<script type="application/javascript" src="assets/js/scripts.js"></script>
+	</body>
 </html>

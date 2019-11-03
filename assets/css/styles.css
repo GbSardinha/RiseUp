@@ -1,0 +1,189 @@
+/*----------Resets----------*/
+
+html {
+	height: 100%;
+}
+
+img,
+video {
+	max-width: 100%;
+	display: block;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+/*----------variáveis----------*/
+
+:root {
+	--fontGrande: 50px;
+	--fontMedia: 35px;
+	--fontPequena: 25px;
+	--fontMtPequena: 15px;
+	--paddingGrande: 50px;
+	--paddingPequeno: 30px;
+	--paddingtMtPequeno: 15px;
+}
+
+/*----------Geral----------*/
+
+body {
+	font-size: var(--fontPequena);
+	font-family: 'lato', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline-block;
+}
+
+/*----------NAV----------*/
+
+nav {
+	width: 100%;
+	height: 10vh;
+	background-color: #384582;
+	color: white;
+	z-index: 1;
+}
+
+.navGrid {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 var(--paddingPequeno);
+	align-items: center;
+}
+
+.navGrid img {
+	height: 5.5vh;
+	margin-right: 2vh;
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.addUserContainer {
+	margin: 5vh auto;
+	width: 120vh;
+	height: 6vh;
+	background: lightgray;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.userTitle {
+	display: flex;
+	align-items: center;
+	margin-left: 2vh;
+	color: white;
+}
+
+.btnContainer {
+	margin-right: 2vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.addUserBTN {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 12vh;
+	height: 4vh;
+	color: white;
+	background: #ffbe5e;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-size: var(--fontMtPequena);
+	cursor: pointer;
+}
+/*  New User Container */
+
+.newUserContainer {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	display: none;
+}
+
+.closeContainer {
+	color: white;
+	position: absolute;
+	top: 15%;
+	left: 80%;
+	cursor: pointer;
+}
+
+.infoContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60vw;
+	height: 50vh;
+	border-radius: 20px;
+	background-color: white;
+	padding: var(--margin-intern);
+}
+
+.infoContainer h2 {
+	padding-top: var(--paddingGrande);
+	margin-bottom: var(--paddingPequeno);
+	text-align: center;
+	font-size: var(--fontMedia);
+}
+
+.userCreateForm {
+	display: flex;
+	justify-content: center;
+}
+
+/* user display */
+
+.tableContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.userDisplay {
+	color: gray;
+}
+
+table {
+	width: 120vh;
+}
